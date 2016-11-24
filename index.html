@@ -8,6 +8,9 @@
   <meta name="description" content="A simple JS calculator">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
+  <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
+
   <link rel="stylesheet" href="css/normalize.min.css">
   <link rel="stylesheet" href="css/main.css">
   <!--[if lt IE 9]>
@@ -20,7 +23,10 @@
   <div class="container">
     <div class="calculator">
       <div class="calc-screen">
-        <p id="calc-screen-text"></p>
+        <div>
+          <p id="calc-screen-text"></p>
+          <p id="calc-screen-text-bottom"></p>
+        </div>
       </div>
       <div class="row">
         <div class="calc-btn" operation="AC"><p>AC</p></div>
