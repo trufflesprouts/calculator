@@ -75,12 +75,27 @@ p {
 .calc-btn ~ .calc-btn {
   border-left: 1px solid #dbdbdb; }
 
-.calc-btn:hover {
-  background-color: #eeeeee; }
+.calc-btn:active {
+  box-shadow: inset 0 2px 5px 1px rgba(0, 0, 0, 0.15); }
 
 .calc-btn p {
   font-size: 16px;
   opacity: 1;
   margin: auto; }
+
+.no-select::selection {
+  background-color: transparent; }
+
+.no-select::-moz-selection {
+  background-color: transparent; }
+
+.no-select {
+  -webkit-user-select: none;
+  -moz-user-select: -moz-none;
+  /*IE10*/
+  -ms-user-select: none;
+  user-select: none;
+  /*You just need this if you are only concerned with android and not desktop browsers.*/
+  -webkit-tap-highlight-color: transparent; }
 
 /*# sourceMappingURL=main.css.map */
